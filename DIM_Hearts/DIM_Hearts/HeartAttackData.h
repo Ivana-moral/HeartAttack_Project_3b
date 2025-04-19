@@ -15,6 +15,5 @@ private:
 public:
 	vector<HeartAttackItem> RefreshData();
 	HeartAttackData(string path);	
-
-
+	vector<int> ExtractColumn(int column);
 };

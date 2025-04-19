@@ -144,15 +144,19 @@
   <ItemGroup>
     <ClCompile Include="DIM_Hearts.cpp" />
     <ClCompile Include="AdjacentListGraph.cpp" />
+    <ClCompile Include="ExtractData.cpp" />
     <ClCompile Include="HeartAttackData.cpp" />
     <ClCompile Include="HeartAttackItem.cpp" />
     <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="RadixSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdjacentListGraph.h" />
+    <ClInclude Include="ExtractData.h" />
     <ClInclude Include="HeartAttackData.h" />
     <ClInclude Include="HeartAttackItem.h" />
     <ClInclude Include="Interface.h" />
+    <ClInclude Include="RadixSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

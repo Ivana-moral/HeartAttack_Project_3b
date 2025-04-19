@@ -103,4 +103,35 @@ vector<HeartAttackItem> HeartAttackData::RefreshData() {
 	return data;
 };
 
+vector<int> HeartAttackData::ExtractColumn(int column) {
+	//Read the CSV file
+	ifstream heartFile(this->FileLocation);
+	vector<int> data;
+
+	if (heartFile.is_open()) {
+		//Read Header and discard
+		string lineFromFile;
+		getline(heartFile, lineFromFile);
+
+		//Get raw data from file 
+		while (getline(heartFile, lineFromFile)) {
+
+			//Convert line into memory stream 
+			istringstream streamLine(lineFromFile);
+			string rawData;
+			int dataValue;
+			while (getline(streamLine, rawData, ',')){
+				if (column == 5){
+					dataValue = round(stod(rawData) * 100) /100;
+					break;
+				}
+
+			}
+
+			data.push_back(dataValue);
+		}
+	}
+
+	return data;
+};
 

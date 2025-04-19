@@ -1,5 +1,3 @@
-#pragma once
-
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -8,7 +6,6 @@ using namespace std;
 
 class HeartAttackItem
 {
-
 public:
 	int Age;
 	int Gender;  //1: Male | 2: Female
